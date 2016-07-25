@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+ <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.css">
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+ <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+ <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
+	<title></title>
+</head>
+<body>
+<section id="form">
+<div class="container">
+<div class="row">
+<div class="col-md-4 col-md-offset-4 text-center">
+	<h1>BookLook<i class="fa fa-eye text-center aria-hidden="true" id="eye_icon"></i></h1>
+	<script id="book-template" type="text/x-handlebars-template">
+		<p>this book is going to take {{readtime}} to read</p>
+		<h1>{{title}}</h1>
+		<p>{{description}}</p>
+		<h4>written by:</h4> {{author}}
+		<img src="{{image}}">
+	</script>
+	<div class ="result_fields">
+	<div>
+	<h3>Enter Book Info</h3>
+	<form class="form-horizontal"> 
+		<div class="form-group"> 
+			<input type="text" class="form-control" id="bookTitle1" placeholder="Book Title"> 
+		</div> 
+		<div class="form-group"> 
+			<input type="text" class="form-control" id="bookAuthor1" placeholder="Book Author"> 
+		</div> 
+		<div class="form-group"> 
+			<input type="text" class="form-control" id="bookSescription1" placeholder="Book Description"> 
+		</div> 
+		<div class="form-group"> 
+			<input type="text" class="form-control" id="imageUrl1" placeholder="Image URL"> 
+		</div> 
+		<div class="form-group"> 
+			<input type="number" class="form-control" id="numberOfPages1" placeholder="Number of Pages"> 
+		</div> 
+		<div class="form-group"> 
+			<input type="number" class="form-control" id="minutesuRead1" placeholder="Minutes Your Read Per Day">
+		</div> 
+		 <button type="search" class="btn-primary">Search</button> 
+	 </form>
+</div>
+</div>
+</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
